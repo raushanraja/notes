@@ -11,19 +11,20 @@
 
 ### PR.1.0
 #### redux-act, react-
-+ create an action with `createAction(type,playloadCreator,metaCreator)`
+1. create an action with `createAction(type,playloadCreator,metaCreator)`
     + contains type to identify the action andn what the payload be.
-|:--|:--| :--|
-|tpye|required|str|
-|payloadCreator|required|function| 
-|metaCreator|optional|function| 
+        |parameter 1| isRequired|datatype|
+        |--|--|--|
+        |tpye|required|str|
+        |payloadCreator|required|function| 
+        |metaCreator|optional|function| 
 
-+ Create a reducer using `createReducer(handler,[defaultState])`
+2. Create a reducer using `createReducer(handler,[defaultState])`
     + handler: object or function 
     + [defaultState]: a default state
 
-+ Create a method in selector 
+3. Create a method in Selector 
 
-+ Add to Container pages
+4. Add to Container pages
     + Add mapStateToProps for allowing access
     + Add mapDispatchToProps for dispatching action
