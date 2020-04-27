@@ -1,0 +1,63 @@
+Python
+
+#### 1. OpenCV load image from url
+```python
+import urllib
+import cv2
+import numpy as np
+image_size=100
+url="https://i.ibb.co/xM0JDKN/AJ-Cook-0001.jpg"
+resp = urllib.request.urlopen(url)
+image = np.asarray(bytearray(resp.read()), dtype="uint8")
+image = cv2.imdecode(image, cv2.cv2.IMREAD_GRAYSCALE)
+image=cv2.resize(image,(image_size,image_size))
+```
+
+
+#### 2. Convert Dataframe Column as Int
+```python
+df['DataFrame Column'] = df['DataFrame Column'].astype(int)
+```
+
+#### 3. Seaborn Image Size/ Plot Size
+
+```python
+fig_dims = (18, 12)
+fig, ax = plt.subplots(figsize=fig_dims)
+sns.lineplot(x="Date", y="Confirmed",sort=False, ax=ax,
+            data=chinaVirus_india)
+```
+
+#### 4. Seaborn Ticks Change/Modify
+```python
+fig_dims = (18, 12)
+fig, ax = plt.subplots(figsize=fig_dims)
+ax.set_xticks(np.arange(0, 101,7))
+sns.lineplot(x="Date", y="Confirmed",sort=False, ax=ax,
+            data=newDataframe)
+```
+
+id: ceb0e95dfe794d7fafaec759bd7312f0
+parent_id: d1bb9e0c91e643beb68556cf0dd94442
+created_time: 2020-03-27T07:31:14.885Z
+updated_time: 2020-04-07T03:45:58.872Z
+is_conflict: 0
+latitude: 25.59080000
+longitude: 85.13480000
+altitude: 0.0000
+author: 
+source_url: 
+is_todo: 0
+todo_due: 0
+todo_completed: 0
+source: joplin-desktop
+source_application: net.cozic.joplin-desktop
+application_data: 
+order: 0
+user_created_time: 2020-03-27T07:31:14.885Z
+user_updated_time: 2020-04-07T03:45:58.872Z
+encryption_cipher_text: 
+encryption_applied: 0
+markup_language: 1
+is_shared: 0
+type_: 1
