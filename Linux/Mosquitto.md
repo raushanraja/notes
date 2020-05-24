@@ -73,7 +73,13 @@ log_type all
 log_dest file /home/ec2-user/mq/mosquitto.log
 log_facility 5
 ```
-#### Encryption using SSL/TSL
+
+#### Pub-Sub Commands
+```
+mosquitto_pub -h siteurl.com -t test -m "hello wor2" -p 8883 --capath /etc/ssl/certs/ -u user -P password
+
+mosquitto_sub -h siteurl.com -t test -p 8883 --capath /etc/ssl/certs/ -u user -P password
+```
 
 - GO to folder which has `mosquitto` folder
 - Run Docker Command: - `sudo docker run -it -p 1883:1883 -v $(pwd)/mosquitto:/mosquitto/ eclipse-mosquitto`
