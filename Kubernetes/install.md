@@ -4,3 +4,7 @@
 + sudo usermod -aG libvirt $USER
 + minikube start --driver=kvm2
 + kubectl cluster-info
+
++ on reboot we need to start minikube but before that 
++ we also need to start service as `sudo systemctl start libv**** something like that`
++ 
