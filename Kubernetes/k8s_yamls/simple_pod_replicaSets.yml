@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: raushnode
+  labels:
+    app: raushanode
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: raushanode
+  template:
+    metadata:
+      labels:
+        app: raushanode
+    spec:
+      containers:
+      - name: raushanode
+        image: raushanraja/raushanode:1.0
