@@ -1,0 +1,110 @@
+  
+  
+# Regular Expression
+  
+  
++ module used "**re**"
++ used for validation, word tokenization etc
++ **r** is used to indicate raw string, example: r'ab*'
+  
+<div style="page-break-after: always"></div>
+  
+## **"re"** Functions
+  
+  
+|Function|Description|
+|:----|:----|
+|<img src="https://latex.codecogs.com/gif.latex?match()"/>|Determine if the RE matches at the <img src="https://latex.codecogs.com/gif.latex?beginning"/> of the string.|
+|<img src="https://latex.codecogs.com/gif.latex?search()"/>|Returns a Match object if there is a match <img src="https://latex.codecogs.com/gif.latex?anywhere"/> in the string|
+|<img src="https://latex.codecogs.com/gif.latex?findall()"/>|Returns a list containing all matches|
+|<img src="https://latex.codecogs.com/gif.latex?finditer()"/>|Find all substrings where the RE matches, and returns them as an iterator.|
+|<img src="https://latex.codecogs.com/gif.latex?fullmatch()"/>|Return corresponding mathc object if whole string matches the pattern.|
+|<img src="https://latex.codecogs.com/gif.latex?split()"/>|Returns a list where the string has been split at each match|
+|<img src="https://latex.codecogs.com/gif.latex?sub()"/>|Replaces one or many matches with a string|
+|<img src="https://latex.codecogs.com/gif.latex?purge()"/>|    Clear the regular expression cache.|
+  
+------------------------------
+### match()
+  
+  
++ match() will return a match object, store the result in a variable for later use.
++ Match object can be quiried for information about the matching string.
++ Match object instances also have several methods and attributes; the most important ones are:
+  
+|Method/Attribute|Purpose|
+|:---|:---|
+|<img src="https://latex.codecogs.com/gif.latex?group()"/>|Return the string matched by the RE|
+|<img src="https://latex.codecogs.com/gif.latex?groups()"/>|Return the tuple containing all the subgroups of the matched by the RE|
+|<img src="https://latex.codecogs.com/gif.latex?groupdict()"/>|Return the dictionary, keyed by subgroup name|
+|<img src="https://latex.codecogs.com/gif.latex?start()"/>|Return the starting position of the match|
+|<img src="https://latex.codecogs.com/gif.latex?end()"/>|Return the ending position of the match|
+|<img src="https://latex.codecogs.com/gif.latex?span()"/>|Return a tuple containing the (start, end) positions of the match|
+  
+<div style="page-break-after: always"></div>
+  
+## Type of characters
+  
+  
++ **Metacharacters** :Metacharacters are characters with a special meaning.
++ **Special sequences** : A special sequence is a <img src="https://latex.codecogs.com/gif.latex?&#x5C;backslash"/> followed by one of the characters in the list below, and has a special meaning.
++ **Sets** : A set is a set of characters inside a pair of square brackets <img src="https://latex.codecogs.com/gif.latex?[%20&#x5C;%20]"/> with a special meaning.
+  
+### Metacharacter
+  
+  
+| Character  |  Description | Example |
+|:---|:---|:---|
+|<img src="https://latex.codecogs.com/gif.latex?[&#x5C;%20]"/>|A set of characters|"[a-m]"|
+|<img src="https://latex.codecogs.com/gif.latex?&#x5C;backslash"/>|Signals a special sequence (can also be used to escape special characters)|<img src="https://latex.codecogs.com/gif.latex?&#x5C;backslash"/>"d" |
+|.|Any character (except newline character) |"he..o"|
+|^|Starts with|"^hello"|
+|<img src="https://latex.codecogs.com/gif.latex?|Ends%20with|&quot;world"/>"|
+|\*|Zero or more occurrences|"aix*"|
+|+|One or more occurrences|"aix+"|
+|{ }|Exactly the specified number of occurrences|"al{2}"|
+|\||Either or|"falls\|stays"|
+|( )|Capture and group||
+  
+<div style="page-break-after: always"></div>
+  
+### Special Sequences
+  
+  
+| Character  |  Description | Example |
+|:---|:---|:---|
+|<img src="https://latex.codecogs.com/gif.latex?&#x5C;backslash%20A"/>|Returns a match if the specified characters are at the beginning of the string|"\AThe"|
+|<img src="https://latex.codecogs.com/gif.latex?&#x5C;backslash%20b"/>|Returns a match where the specified characters are at the beginning or at the end of a word|r"\bain" r"ain\b"|
+|<img src="https://latex.codecogs.com/gif.latex?&#x5C;backslash%20B"/>|Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word|r"\Bain" r"ain\B"|
+|<img src="https://latex.codecogs.com/gif.latex?&#x5C;backslash%20d"/>|Returns a match where the string contains digits (numbers from 0-9)|"\d"|
+|<img src="https://latex.codecogs.com/gif.latex?&#x5C;backslash%20D"/>|Returns a match where the string DOES NOT contain digits|"\D"|
+|<img src="https://latex.codecogs.com/gif.latex?&#x5C;backslash%20s"/>|Returns a match where the string contains a white space character|"\s"|
+|<img src="https://latex.codecogs.com/gif.latex?&#x5C;backslash%20S"/>|Returns a match where the string DOES NOT contain a white space character|"\S"|
+|<img src="https://latex.codecogs.com/gif.latex?&#x5C;backslash%20w"/>|Returns a match where the string contains any word characters (characters from a to Z, digits from 0-9, and the underscore _ character)|"\w"|
+|<img src="https://latex.codecogs.com/gif.latex?&#x5C;backslash%20W"/>|Returns a match where the string DOES NOT contain any word characters|"\W"|
+|<img src="https://latex.codecogs.com/gif.latex?&#x5C;backslash%20Z"/>|Returns a match if the specified characters are at the end of the string|"Spain\Z"|
+  
+<div style="page-break-after: always"></div>
+  
+### Sets
+  
+  
+|Character|Description|
+|:---|:---|
+|[arn]|Returns a match where one of the specified characters (a, r, or n) are present|
+|[a-n]|Returns a match for any lower case character, alphabetically between a and n|
+|[^arn]|Returns a match for any character EXCEPT a, r, and n|
+|[0123]|Returns a match where any of the specified digits (0, 1, 2, or 3) are present|
+|[0-9]|Returns a match for any digit between 0 and 9|
+|[0-5][0-9]|Returns a match for any two-digit numbers from 00 and 59|
+|[a-zA-Z]|Returns a match for any character alphabetically between a and z, lower case OR upper case|
+|[+]|In sets, +, *, ., |, (), <img src="https://latex.codecogs.com/gif.latex?,{}%20has%20no%20special%20meaning,%20so%20[+]%20means:%20return%20a%20match%20for%20any%20+%20character%20in%20the%20string|------------------------------###%20Escape%20Sequences+"/>\backslash a<img src="https://latex.codecogs.com/gif.latex?+"/>\backslash b<img src="https://latex.codecogs.com/gif.latex?+"/>\backslash f<img src="https://latex.codecogs.com/gif.latex?+"/>\backslash n<img src="https://latex.codecogs.com/gif.latex?+"/>\backslash r<img src="https://latex.codecogs.com/gif.latex?+"/>\backslash t<img src="https://latex.codecogs.com/gif.latex?+"/>\backslash u<img src="https://latex.codecogs.com/gif.latex?+"/>\backslash U<img src="https://latex.codecogs.com/gif.latex?+"/>\backslash v<img src="https://latex.codecogs.com/gif.latex?+"/>\backslash x<img src="https://latex.codecogs.com/gif.latex?+"/>\backslash \backslash$
+  
+<div style="page-break-after: always"></div>
+  
+## Example
+  
+  
+```python
+  
+```
+  
