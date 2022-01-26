@@ -17,6 +17,13 @@
     - IRFZ44N 
       - https://components101.com/mosfets/irfz44n-datasheet-pinout-features
       - https://www.youtube.com/watch?v=dA8hja46F3w
+  
+  - Zener Diode
+    - https://www.electronics-tutorials.ws/diode/diode_7.html
+    - https://www.digikey.in/en/maker/blogs/zener-diode-basic-operation-and-applications
+    - https://www.electronics-notes.com/articles/electronic_components/diode/zener-diode-circuits-design.php
+    - https://components101.com/articles/designing-an-overvoltage-protection-circuit-using-zener-diodes
+    - https://www.instructables.com/Reverse-Polarity-Protection-Circuits/
 
 - Projects
   - Battery
