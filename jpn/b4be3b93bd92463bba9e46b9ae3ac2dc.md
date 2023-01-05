@@ -1,0 +1,13 @@
+id: b4be3b93bd92463bba9e46b9ae3ac2dc
+parent_id: 1ab37344340146c99040600de5fe2e71
+item_type: 1
+item_id: 30e5d7fc46d54857adf0dfd6c5cb36ce
+item_updated_time: 1665751220664
+title_diff: "[]"
+body_diff: "[{\"diffs\":[[0,\"arameter\"],[1,\" (Trait Bound)\"],[0,\"\\\n- Trait\"]],\"start1\":4744,\"start2\":4744,\"length1\":16,\"length2\":30},{\"diffs\":[[0,\";\\\n\\t\\t}\\\n\\\n\\t```\\\n\"],[1,\"\\\n### Multiple Trait Bounds\\\n- A generic type parameter can have more than one trait bound\\\n- `+` operator is used to bound more than one trait.\\\n- Example:\\\n```rust\\\n\\t// Generic Type Parameter with one bound \\\n\\tfn foo<T: Clone>(x: T) {\\\n\\t\\tx.clone();\\\n\\t}\\\n\\\n\\t\\\n\\tuse std::fmt::Debug;\\\n\\t// Generic Type Parameter with two bound `Clone` and `Debug` \\\n\\tfn foo<T: Clone + Debug>(x: T) {\\\n\\t\\tx.clone();\\\n\\t\\tprintln!(\\\"{:?}\\\", x);\\\n\\t}\\\n```\\\n\\\n### Where Caluse\\\n\\\n- `where` clause is used when we need a large number of Trait bound with multiple generic type\\\n-  It is used to make the function syntax more readable\\\n-  Example:\\\n```rust\\\n\\t// Function definition without where clause\\\n\\tfn foo<T: Clone, K: Clone + Debug, L: Debug>(x: T, y: K, z: L) {\\\n\\t\\tx.clone();\\\n\\t\\ty.clone();\\\n\\t\\tprintln!(\\\"{:?}\\\", z);\\\n\\t}\\\n\\\n\\t// Same Function, with a a where clause\\\n\\t\\tfn foo<T, K, L>(x: T, y: K, z: L)\\\n\\t\\twhere T: Clone,\\\n\\t\\t\\t  K: Clone + Debug\\\n\\t\\t\\t  L: Debug {\\\n\\\n\\t\\tx.clone();\\\n\\t\\ty.clone();\\\n\\t\\tprintln!(\\\"{:?}\\\", z);\\\n\\t}\\\n\\\n```\\\n\\\n### Trait Inheritance\\\n- A train can inherit other trait using\\t`:` notation\\\n- Implementor of a trait also needs to implement the inherited traits.\\\n- Implenentor implements all trait with individual `impl TraitName for Type` block\\\n- Example:\\\n```rust\\\n\\\n\\ttrait Foo {\\\n\\t\\tfn foo(&self);\\\n\\t}\\\n\\\n\\t// FooBar inheritaing Foo trait\\\n\\ttrait FooBar : Foo {\\\n\\t\\tfn foobar(&self);\\\n\\t}\\\n\\\n\\\n\\\n\\t// Implementors of FooBar must also implement Foo, like this:\\\n\\\n\\tstruct Baz;\\\n\\\n\\timpl Foo for Baz {\\\n\\t\\tfn foo(&self) { println!(\\\"foo\\\"); }\\\n\\t}\\\n\\\n\\timpl FooBar for Baz {\\\n\\t\\tfn foobar(&self) { println!(\\\"foobar\\\"); }\\\n\\t}\\\n\\\n```\"]],\"start1\":5249,\"start2\":5249,\"length1\":12,\"length2\":1545}]"
+metadata_diff: {"new":{},"deleted":[]}
+encryption_cipher_text: 
+encryption_applied: 0
+updated_time: 2022-10-14T12:42:46.799Z
+created_time: 2022-10-14T12:42:46.799Z
+type_: 13
