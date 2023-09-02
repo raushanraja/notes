@@ -1,13 +1,15 @@
 ### Asyncio
 - asyncio allows to write **concurrent** code using **async/await** syntax.
 - Offer perfect to write IO-bound and high level network structured code.
-- asyncio library provides high level api to:
+
+- Asyncio library provides high level api to:
   - Runners
   - Run coroutines concurrently. 
   - Perform network IO and IPC.
   - Control subprocesses.
   - Distribute tasks via queues.
   - Synchronize concurrent code.
+
 - Low level api:
   - Create and manage event loops.
   - Running subprocesses.
@@ -20,6 +22,10 @@
 #### Runners:
   - These are main entry points for asyncio programs.
   - There are built on top of event loop to simplify async/await programming.
+  - Type of Runners:
+    - asyncio.run()
+    - asyncio.Runner()
+
   - Running a coroutine:
     - Syntax: `asyncio.run(coro, * , debug=None)`:
     ```python
@@ -96,3 +102,11 @@
 
       asyncio.run(run_tasks())
   ```
+
+#### Awaitables:
+- Awaitable is an object that can be used with `await` expression.
+- 3 Types of awaitable objects:
+    - coroutines : Coroutines as defined above
+    - Task : Created by asyncio.create_task() 
+    - Futures
+    
