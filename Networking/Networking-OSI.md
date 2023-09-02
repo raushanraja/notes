@@ -41,3 +41,7 @@ Layer 7 |Application    |Application   | HTTP                     | data, reques
 - https://www.geeksforgeeks.org/difference-between-segments-packets-and-frames/
 - https://www.baeldung.com/cs/networking-packet-fragment-frame-datagram-segment
 - https://www.educative.io/blog/osi-model-layers
+- https://dfdeboer.github.io/BURKS/pcinfo/hardware/ethernet/framepac.htm
+- https://www.computernetworkingnotes.com/ccna-study-guide/segmentation-explained-with-tcp-and-udp-header.html
+- https://superuser.com/questions/298087/whats-the-difference-between-a-tcp-segment-and-a-tcp-packet
+- https://www.ibm.com/docs/en/zos/2.2.0?topic=internets-tcpip-tcp-udp-ip-protocols
