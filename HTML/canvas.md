@@ -14,7 +14,38 @@
 - And it increases as we move along x-axis or y-axis
 
 
-#### 4. CanvasRenderingContext2D Instance Methods:
+#### 4. Porperties
+|Property|Description|Values|
+|-|-|-|
+|`canvas` | HTMLCanvasElement | 
+|`direction` | Current text direction | "ltr" , "rtl", "inherit"|
+|`fillStyle` | The color, gradient, or pattern to use inside shapes |
+|`filter` | Similar to the CSS filter property |
+|`font` | Current text style for drawing text | 
+|`fontkerning` | Specifies how fontkerning is user | "auto", "normal", "none"|
+|`fontStretch` | How the font may be expanded or condensed | ultra-condensed, extra-condensed, condensed, semi-condensed, normal (default), semi-expanded, expanded, extra-expanded, ultra-expanded|
+|`fontVariantCaps` | An alternative capitalization of the rendered text. | value CSS font-variant-caps property|
+|`globalAlpha`| Alpha (transparency) value. | between 0 and 1.|
+|`globalCompositeOperation` | Sets the type of compositing operation to apply | [Composte Operation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Compositing/Example)|
+|`imageSmoothEnabled` | Whether scaled images are smoothed. | true (default value), false. |
+|`imageSmoothingQuality` | Set the quality of image smoothing. | "low", "medium", "high"|
+|`letterSpacing` | Specifies the spacing between letters. | Corresponds to the CSS letter-spacing property.|
+|`lineCap` | The shape used to draw the end points of lines. | "butt", "round", "square"|
+|`lineDashOffset` | Sets the line dash offset, or "phase."  | Float value, default = 0.0|
+|`lineJoin` | The shape used to join two line segments where they meet. | "round", "bevel", "miter" |
+|`lineWidth` | Sets the thickness of lines. | A float, default = 1.0|
+|`miterLimit` | Sets the miter limit ratio. | A float, default = 10.0|
+|`shadowBlur` | The amount of blur applied to shadows.| Non-negative float, default = 0;|
+|`shadowColor` | The color of shadows. |  A string parse as css color value.|
+|`shadowOffsetX`  | The distance that shadows will be offset horizontally. | A float, default = 0 |
+|`shadowOffsetY` | Specifies the distance that shadows will be offset vertically. | A float, default = 0|
+|`strokeStyle` | The color, gradient, or pattern to use for the strokes. | A string parse css value, default = #000|
+|`textAlign` | The current text alignment in use. | "left", "right", "center", "start", "end"|
+|`textBaseLine` | The current text baseline in use | "top", "hanging", "middle", "alphabetic", "ideographic", "bottom"|
+|`textRendering` | Inform the rendering engine about what to optimize for text rendering | "auto", "optimizeSpeed", "optimizeLegibility", "optimizePrecision"|
+|`wordSpacing` | The spacing between words | Word spacing as a string in the CSS length data format , default = "0px" |
+
+#### 5. CanvasRenderingContext2D Instance Methods:
 |Method|Description|
 |-|-|
 |`arc(x, y, radius, startAngle, endAngle[, counterclockwise])`| Create circular arc|
