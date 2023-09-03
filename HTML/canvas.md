@@ -26,7 +26,7 @@
 |`fontStretch` | How the font may be expanded or condensed | ultra-condensed, extra-condensed, condensed, semi-condensed, normal (default), semi-expanded, expanded, extra-expanded, ultra-expanded|
 |`fontVariantCaps` | An alternative capitalization of the rendered text. | value CSS font-variant-caps property|
 |`globalAlpha`| Alpha (transparency) value. | between 0 and 1.|
-|`globalCompositeOperation` | Sets the type of compositing operation to apply | [Composte Operation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Compositing/Example)|
+|`globalCompositeOperation` | Sets the type of compositing operation to apply | [Composite Operation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Compositing/Example)|
 |`imageSmoothEnabled` | Whether scaled images are smoothed. | true (default value), false. |
 |`imageSmoothingQuality` | Set the quality of image smoothing. | "low", "medium", "high"|
 |`letterSpacing` | Specifies the spacing between letters. | Corresponds to the CSS letter-spacing property.|
