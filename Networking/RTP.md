@@ -98,15 +98,15 @@
 
 
 References:
-    - https://datatracker.ietf.org/doc/html/rfc3550
-    - https://nickvsnetworking.com/rtp-more-than-you-wanted-to-know/
-    - https://nickvsnetwGorking.com/pyrtp-simple-rtp-library-for-python/
-    - https://book.systemsapproach.org/e2e/rtp.html
-    - https://en.wikipedia.org/wiki/RTP_payload_formats
-    - https://webrtcforthecurious.com/
-    - https://redirect.cs.umbc.edu/~pmundur/courses/CMSC691C/lab5-kurose-ross.html
-    - https://www.ietf.org/proceedings/67/slides/avt-5.pdf
-    - https://datatracker.ietf.org/doc/html/rfc5761#page-4
-    - https://redirect.cs.umbc.edu/~pmundur/courses/CMSC691C/lab5-kurose-ross.html
-    - https://github.com/vanshp2002/Video-Streaming-using-RTP-RTSP/tree/main
-    - https://www.interviewcake.com/concept/java/bit-shift
+- https://datatracker.ietf.org/doc/html/rfc3550
+- https://nickvsnetworking.com/rtp-more-than-you-wanted-to-know/
+- https://nickvsnetwGorking.com/pyrtp-simple-rtp-library-for-python/
+- https://book.systemsapproach.org/e2e/rtp.html
+- https://en.wikipedia.org/wiki/RTP_payload_formats
+- https://webrtcforthecurious.com/
+- https://redirect.cs.umbc.edu/~pmundur/courses/CMSC691C/lab5-kurose-ross.html
+- https://www.ietf.org/proceedings/67/slides/avt-5.pdf
+- https://datatracker.ietf.org/doc/html/rfc5761#page-4
+- https://redirect.cs.umbc.edu/~pmundur/courses/CMSC691C/lab5-kurose-ross.html
+- https://github.com/vanshp2002/Video-Streaming-using-RTP-RTSP/tree/main
+- https://www.interviewcake.com/concept/java/bit-shift
