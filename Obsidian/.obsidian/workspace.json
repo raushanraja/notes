@@ -11,11 +11,19 @@
             "id": "28da19b3e05769fb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "SIP/SIP Basics.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/a.excalidraw"
+              }
+            }
+          },
+          {
+            "id": "1363580ac4f1b1fb",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/a.excalidraw"
               }
             }
           }
@@ -93,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SIP/SIP Basics.md",
+                "file": "Excalidraw/a.excalidraw",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SIP/SIP Basics.md",
+                "file": "Excalidraw/a.excalidraw",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SIP/SIP Basics.md"
+                "file": "Excalidraw/a.excalidraw"
               }
             }
           }
@@ -155,18 +163,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "28da19b3e05769fb",
+  "active": "afe12f16058bfb6e",
   "lastOpenFiles": [
-    "SIP/basic 2023-05-09 19.50.35.excalidraw.png",
-    "SIP/a.png",
-    "Excalidraw/a.excalidraw",
-    "Excalidraw/basic 2023-05-09 19.50.35.excalidraw.md",
     "Excalidraw/basic 2023-05-09 19.50.35.excalidraw.png",
+    "Excalidraw/basic 2023-05-09 19.50.35.excalidraw.md",
+    "SIP/a.png",
+    "SIP/basic 2023-05-09 19.50.35.excalidraw.png",
+    "SIP/SIP Basics.md",
+    "Pasted image 20230509204024.png",
+    "Excalidraw/a.excalidraw",
     "Excalidraw/aexcalidraw",
     "Excalidraw/basic.excalidraw ",
     "Excalidraw/basic 2023-05-09 19.50.35.excalidraw copy.md",
-    "SIP/SIP Basics.md",
-    "Pasted image 20230509204024.png",
     "Pasted image 20230509202639.png",
     "Excalidraw/Untitled.md",
     "Pasted image 20230509202208.png",
