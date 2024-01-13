@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aoqc"
+version = "0.1.0"
+description = ""
+authors = ["raushanraja <vraushanraja@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aioquic = "^0.9.22"
+aiortc = "^1.5.0"
+starlette = "^0.32.0.post1"
+httpbin = "^0.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
