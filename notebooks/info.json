@@ -8,5 +8,9 @@
 		"value": "",
 		"updatedTime": 0
 	},
-	"masterKeys": []
+	"masterKeys": [],
+	"ppk": {
+		"value": null,
+		"updatedTime": 0
+	}
 }
