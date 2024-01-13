@@ -1,0 +1,1 @@
+/home/rr/sync/own/notes/Rust/comprehensive_rust_google/day1/exmaples/elevator_events/target/debug/elevator_events: /home/rr/sync/own/notes/Rust/comprehensive_rust_google/day1/exmaples/elevator_events/src/main.rs
