@@ -1,9 +1,10 @@
 #### Bit Shif
 - Bit Shift is process of moving binary representation of a digit left or right.
 - Type of shifts:
-    - Left (or Logical Left) Shift
+    - Logical Left Shift
     - Logical Right Shift
     - Arithematic Right Shift
+    - Arithematic Left Shift
 
 #### Logical Left Shift
 - When shifting left
@@ -15,11 +16,16 @@
     ```
     1010 << 1  = 0101
     Here each digit is shifted by 2 places, most-significant bit is lost, 0 is inserted at other side.
-
-
     1001 << 2 = 0100
     Here each digit shifted by 2 places, most-significant bit is lost, 0 is inserted at other side.
-    ```
+    
+
+
+    MSB                         LSB
+    1   0   1   1   0   0   1   1   ←     0
+    ⇙   ⇙   ⇙   ⇙   ⇙   ⇙   ⇙   ⇙
+    0   1   1   0   0   1   1   0
+```
 
 #### Logical Right Shift
 -  When shifting right with a logical right shift
@@ -68,3 +74,5 @@
 
 #### References
 - https://bit-calculator.com/bit-shift-calculator
+- https://open4tech.com/logical-vs-arithmetic-shift/
+
