@@ -13,7 +13,7 @@
 - A single left shift multiplies a  binary number by 2.
 - The left shift operator is usually written as "<<" or same keyword is used in programming languages.
 - Example:
-    ```
+```
     1010 << 1  = 0101
     Here each digit is shifted by 2 places, most-significant bit is lost, 0 is inserted at other side.
     1001 << 2 = 0100

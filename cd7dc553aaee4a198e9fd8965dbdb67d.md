@@ -2,11 +2,11 @@ Nom: Parser
 
 ## Nom
 - Used to build parsers and helps combine them using combinators.
-- The nor parser takean and input and returns a result.
-    - In result, it result 
-        - `Ok` indicating gthe parser succssfully found what it was looking for.
+- The nom parser takes an input and returns a result.
+    - In result, it returns
+        - `Ok` indicating the parser succssfully found what it was looking for.
         - `Err` indicating it could not found what it was looking for.
-- When it's okay `Ok`, it restuls a tuple. 
+- When it's okay `Ok`, it resutls in a tuple. 
     - First field: Contains everything that parser did not processed.
     - Second field everything parser processed. 
 - When it fails `Err`, it resutls multiple errors (More on this lated)
@@ -23,14 +23,14 @@ Nom: Parser
 ```
 
 
-##### IResult<I,O>
+### IResult<I,O>
 - Nom usages IResult<I,O> type to represent the model given in figure.
 - The `Ok` variant takes two types `I` (=Input) and `O` (=Output).
 - The `Err` variant stores an error 
 - The type is import from as `use nom::IResult`
 
 
-##### Tags
+### Tags
 - A collection of bytes in nom is call a tag. Example: "abc" is a tag and created as tag("abc")
 - Tags are so common that there exists function called `tag` & `tag_no_case` in nom.
 - It helps in parsing  when matching a string
@@ -38,7 +38,7 @@ Nom: Parser
 - `pub use nom::bytes::complete::tag;`
 
 
-##### Characters
+### Characters
 - Tags are useful but they are restrictive.
 - Characters are pre-written parsers in nom, which allows to parse any group of characters.
 - This differs from tag, as Characters allows to accept any group of characters, 
@@ -58,7 +58,7 @@ rather than just accepting characters in defined sequence.
 
 
 
-#####  Alternatives and Composition
+###  Alternatives and Composition
 - Alternatives are used to choose between multiple parser untill one is succssfull.
 - Composition is used to chian multiple parser and evaluate all of them.
 
@@ -93,7 +93,7 @@ rather than just accepting characters in defined sequence.
 id: cd7dc553aaee4a198e9fd8965dbdb67d
 parent_id: 6260d9c9d06f4a5bb6de5be6751f3394
 created_time: 2023-10-01T10:36:03.243Z
-updated_time: 2024-01-13T13:09:19.717Z
+updated_time: 2024-07-05T09:41:30.001Z
 is_conflict: 0
 latitude: 23.79565310
 longitude: 86.43038590
@@ -108,7 +108,7 @@ source_application: net.cozic.joplin-desktop
 application_data: 
 order: 1696156563243
 user_created_time: 2023-10-01T10:36:03.243Z
-user_updated_time: 2024-01-13T13:09:19.717Z
+user_updated_time: 2024-07-05T09:41:30.001Z
 encryption_cipher_text: 
 encryption_applied: 0
 markup_language: 1
